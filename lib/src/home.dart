@@ -12,16 +12,16 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "It's soccertime",
-            style: TextStyle(fontFamily: MyFonts.gmarketsans),
-          ),
-
-          // shape: Border(bottom: BorderSide(color: Colors.black, width: 2)),
+      appBar: AppBar(
+        title: Text(
+          "It's soccertime",
+          style: TextStyle(fontFamily: MyFonts.gmarketsans),
         ),
-        floatingActionButton: FloatingMenu()
-        // floatingActionButton: FloatingMenu(),
-        );
+
+        // shape: Border(bottom: BorderSide(color: Colors.black, width: 2)),
+      ),
+      floatingActionButton: FloatingMenu(),
+      // floatingActionButton: FloatingMenu(),
+    );
   }
 }

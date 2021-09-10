@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 
 class FloatingMenu extends StatefulWidget {
   const FloatingMenu({Key? key}) : super(key: key);
@@ -13,10 +14,20 @@ class _FloatingMenuState extends State<FloatingMenu> {
   @override
   Widget build(BuildContext context) {
     return SpeedDial(
-      //분리예정
+      backgroundColor: Colors.transparent,
+      activeBackgroundColor: Colors.transparent,
+      useRotationAnimation: true,
+      // SvgPicture.asset("assets/svg/icons/soccer-ball.svg");
       elevation: 0.0,
+      child: Container(
+        color: Colors.transparent,
+        child: Image.asset('assets/svg/icons/soccer-ball.png'),
+      ),
       children: [
         SpeedDialChild(
+          onTap: () {
+            Get.toNamed("/settings");
+          },
           child: Icon(Icons.settings),
           // label: "설정",
           backgroundColor: Colors.transparent,
