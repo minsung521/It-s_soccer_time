@@ -16,7 +16,8 @@ class News extends StatelessWidget {
           "뉴스",
           style: TextStyle(fontFamily: MyFonts.gmarketsans),
         ),
-
+        elevation: 10.0,
+        shadowColor: Colors.white60,
         // shape: Border(bottom: BorderSide(color: Colors.black, width: 2)),
       ),
       // floatingActionButton: FloatingMenu()

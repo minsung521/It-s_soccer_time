@@ -16,7 +16,8 @@ class Matches extends StatelessWidget {
           "경기일정",
           style: TextStyle(fontFamily: MyFonts.gmarketsans),
         ),
-
+        elevation: 10.0,
+        shadowColor: Colors.white60,
         // shape: Border(bottom: BorderSide(color: Colors.black, width: 2)),
       ),
       floatingActionButton: SpeedDial(

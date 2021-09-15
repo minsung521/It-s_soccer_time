@@ -22,6 +22,8 @@ class Home extends StatelessWidget {
             letterSpacing: -0.25,
           ),
         ),
+        elevation: 10.0,
+        shadowColor: Colors.white60,
       ),
       floatingActionButton: SpeedDial(
         backgroundColor: Colors.transparent,
