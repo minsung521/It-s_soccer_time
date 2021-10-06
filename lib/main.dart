@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
+        shadowColor: Colors.transparent,
       ),
       home: Home(),
       getPages: [
