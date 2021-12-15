@@ -30,6 +30,10 @@ dependencies:
   get: ^4.3.8
   flutter_svg: ^0.22.0
   flutter_speed_dial: ^4.3.0
+  http: ^0.13.3
+  flutter_native_splash: ^1.2.3
+  table_calendar: ^3.0.3
+  date_picker_timeline: ^1.2.3
 
 dev_dependencies:
   flutter_test:
@@ -49,6 +53,14 @@ flutter:
   assets:
     - assets/svg/icons/soccer-ball.png
     - assets/svg/icons/soccer-ball.svg
+    - assets/png/to.png
+    - assets/png/city.png
+    - assets/png/noti.png
+    - assets/png/noti-s.png
+    - assets/png/news1.png
+    - assets/png/news2.png
+    - assets/png/news3.png
+
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
@@ -66,9 +78,10 @@ flutter:
   fonts:
     - family: GmarketSans
       fonts:
-        - asset: fonts/GmarketSansTTFBold.ttf
         - asset: fonts/GmarketSansTTFLight.ttf
         - asset: fonts/GmarketSansTTFMedium.ttf
+        - asset: fonts/GmarketSansTTFBold.ttf
+
     - family: SCDream
       fonts:
         - asset: fonts/AnyConv.com__SCDream1.ttf
@@ -83,3 +96,6 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/splash.png

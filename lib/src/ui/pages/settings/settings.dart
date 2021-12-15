@@ -2,23 +2,46 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:get/get.dart';
-import 'package:its_soccer_time/src/data/font.dart';
-import 'package:its_soccer_time/src/elements/floatingmenu.dart';
+import 'package:its_soccer_time/src/ui/font.dart';
+import 'package:its_soccer_time/src/ui/floatingmenu.dart';
 
-class Matches extends StatelessWidget {
-  const Matches({Key? key}) : super(key: key);
+class Settings extends StatelessWidget {
+  const Settings({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "경기일정",
-          style: TextStyle(fontFamily: MyFonts.gmarketsans),
+      body: Container(
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [Color(0xffffffff), Color(0xffF0F7FD)])),
+        child: Column(
+          children: [
+            SizedBox(
+              height: (116 / XDsize.XdH) * size.height,
+            ),
+            Row(
+              children: [
+                Text(
+                  "    설정",
+                  style: TextStyle(
+                    fontFamily: MyFonts.gmarketsans,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    letterSpacing: -0.25,
+                  ),
+                ),
+                SizedBox(
+                  width: (483 / XDsize.XdW) * size.width,
+                ),
+              ],
+            ),
+          ],
         ),
-        elevation: 10.0,
-        shadowColor: Colors.white60,
-        // shape: Border(bottom: BorderSide(color: Colors.black, width: 2)),
       ),
       floatingActionButton: SpeedDial(
         backgroundColor: Colors.transparent,
@@ -37,7 +60,6 @@ class Matches extends StatelessWidget {
             },
             child: Icon(Icons.settings),
             backgroundColor: Colors.transparent,
-            foregroundColor: Colors.grey,
             elevation: 0.0,
           ),
           SpeedDialChild(
@@ -51,25 +73,26 @@ class Matches extends StatelessWidget {
           ),
           SpeedDialChild(
             child: Icon(Icons.notifications),
+            foregroundColor: Colors.grey,
             onTap: () {
               Get.offAllNamed("/");
             },
-            foregroundColor: Colors.grey,
             backgroundColor: Colors.transparent,
             elevation: 0.0,
           ),
           SpeedDialChild(
             child: Icon(Icons.feed),
             backgroundColor: Colors.transparent,
+            foregroundColor: Colors.grey,
             elevation: 0.0,
             onTap: () {
               Get.offAllNamed("/news");
             },
-            foregroundColor: Colors.grey,
           ),
           SpeedDialChild(
             child: Icon(Icons.calendar_today),
             backgroundColor: Colors.transparent,
+            foregroundColor: Colors.grey,
             onTap: () {
               Get.offAllNamed("/matches");
             },

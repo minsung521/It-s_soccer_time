@@ -2,11 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:its_soccer_time/src/home.dart';
-import 'package:its_soccer_time/src/pages/favorites.dart';
-import 'package:its_soccer_time/src/pages/matches.dart';
-import 'package:its_soccer_time/src/pages/news.dart';
-import 'package:its_soccer_time/src/pages/settings.dart';
+import 'package:its_soccer_time/src/ui/pages/home/home.dart';
+import 'package:its_soccer_time/src/ui/pages/fav/favorites.dart';
+import 'package:its_soccer_time/src/ui/pages/matches/matches.dart';
+import 'package:its_soccer_time/src/ui/pages/news/news.dart';
+import 'package:its_soccer_time/src/ui/pages/settings/settings.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,8 +21,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.white,
         splashColor: Colors.transparent,
-        highlightColor: Colors.transparent,
-        shadowColor: Colors.transparent,
+        // highlightColor: Colors.transparent,
+        // shadowColor: Colors.transparent,
       ),
       home: Home(),
       getPages: [
