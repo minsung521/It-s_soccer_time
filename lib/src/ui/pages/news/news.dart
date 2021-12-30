@@ -229,7 +229,7 @@ class News extends StatelessWidget {
             onTap: () {
               Get.offAllNamed("/settings");
             },
-            foregroundColor: Colors.grey,
+            foregroundColor: Color(MyColors.non_selected),
             child: Icon(Icons.settings),
             backgroundColor: Colors.transparent,
             elevation: 0.0,
@@ -240,12 +240,12 @@ class News extends StatelessWidget {
               Get.offAllNamed("/favorites");
             },
             backgroundColor: Colors.transparent,
-            foregroundColor: Colors.grey,
+            foregroundColor: Color(MyColors.non_selected),
             elevation: 0.0,
           ),
           SpeedDialChild(
             child: Icon(Icons.notifications),
-            foregroundColor: Colors.grey,
+            foregroundColor: Color(MyColors.non_selected),
             onTap: () {
               Get.offAllNamed("/");
             },
@@ -254,6 +254,7 @@ class News extends StatelessWidget {
           ),
           SpeedDialChild(
             child: Icon(Icons.feed),
+            foregroundColor: Color(MyColors.pointcolor),
             backgroundColor: Colors.transparent,
             elevation: 0.0,
             onTap: () {
@@ -267,7 +268,7 @@ class News extends StatelessWidget {
               Get.offAllNamed("/matches");
             },
             elevation: 0.0,
-            foregroundColor: Colors.grey,
+            foregroundColor: Color(MyColors.non_selected),
           ),
         ],
       ),

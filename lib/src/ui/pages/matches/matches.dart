@@ -181,7 +181,7 @@ class _MatchesState extends State<Matches> {
             },
             child: Icon(Icons.settings),
             backgroundColor: Colors.transparent,
-            foregroundColor: Colors.grey,
+            foregroundColor: Color(MyColors.non_selected),
             elevation: 0.0,
           ),
           SpeedDialChild(
@@ -190,7 +190,7 @@ class _MatchesState extends State<Matches> {
               Get.offAllNamed("/favorites");
             },
             backgroundColor: Colors.transparent,
-            foregroundColor: Colors.grey,
+            foregroundColor: Color(MyColors.non_selected),
             elevation: 0.0,
           ),
           SpeedDialChild(
@@ -198,7 +198,7 @@ class _MatchesState extends State<Matches> {
             onTap: () {
               Get.offAllNamed("/");
             },
-            foregroundColor: Colors.grey,
+            foregroundColor: Color(MyColors.non_selected),
             backgroundColor: Colors.transparent,
             elevation: 0.0,
           ),
@@ -209,7 +209,7 @@ class _MatchesState extends State<Matches> {
             onTap: () {
               Get.offAllNamed("/news");
             },
-            foregroundColor: Colors.grey,
+            foregroundColor: Color(MyColors.non_selected),
           ),
           SpeedDialChild(
             child: Icon(Icons.calendar_today),
@@ -218,6 +218,7 @@ class _MatchesState extends State<Matches> {
               Get.offAllNamed("/matches");
             },
             elevation: 0.0,
+            foregroundColor: Color(MyColors.pointcolor),
           ),
         ],
       ),
